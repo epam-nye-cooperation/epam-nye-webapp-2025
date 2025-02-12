@@ -1,0 +1,75 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-size: 16px;
+}
+
+#head {
+  background-color: wheat;
+}
+
+#primary-nav UL {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#primary-nav UL LI A {
+  color: black;
+  display: block;
+  font-weight: 600;
+  line-height: 3em;
+  padding: 0 15px;
+  text-decoration: none;
+  /*transition: all 0.3s ease-in;*/
+}
+
+#primary-nav UL LI A:hover {
+  background-color: saddlebrown;
+  color: white;
+}
+
+#primary-nav BUTTON {
+  display: none;
+}
+
+@media screen and (max-width: 48em) {
+  #primary-nav BUTTON {
+    background: peachpuff;
+    border: solid 1px saddlebrown;
+    color: black;
+    display: block;
+    margin: 0 auto;
+    padding: 0 1em;
+    line-height: 2em;
+  }
+
+  #primary-nav {
+    padding: 0.5em 0;
+    position: relative;
+  }
+
+  #primary-nav UL {
+    background: white;
+    border: solid 1px saddlebrown;
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    left: 1em;
+    position: absolute;
+    right: 1em;
+    top: 100%;
+    z-index: 10;
+  }
+
+  #primary-nav BUTTON.active + UL/*,
+  #primary-nav BUTTON:active + UL,
+  #primary-nav BUTTON:focus-within + UL*/ {
+    display: flex;
+  }
+}

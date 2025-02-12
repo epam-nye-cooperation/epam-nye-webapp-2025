@@ -1,0 +1,18 @@
+/**
+Breakpoints: 480 - 640 - 770 - 1023 - 1200
+*/
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 1023px) {
+}
+
+@media screen and (max-width: 770px) {
+}
+
+@media screen and (max-width: 640px) and (orientation: portrait) {
+}
+
+@media screen and (max-width: 480px) {
+}
