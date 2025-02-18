@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <input name="content" />
+        <button class="button">Click here</button>
+        <ul class="list"></ul>
+        <p>0</p>
+    </div>
+    <script>
+        const list = document.querySelector('#app .list');
+
+        const addElement = () => {
+            const input = document.querySelector("input[name='content']");
+
+            const element = document.createElement('li');
+            const inputText = input.value.trim();
+
+            if (!inputText) {
+                return;
+            }
+
+            element.innerText = inputText;
+
+            list.appendChild(element);
+
+            document.querySelector('#app p').innerText =
+                list.children.length;
+        };
+
+        const button = document.querySelector('.button');
+        button.addEventListener('click', addElement);
+
+        
+    </script>
+</body>
+</html>

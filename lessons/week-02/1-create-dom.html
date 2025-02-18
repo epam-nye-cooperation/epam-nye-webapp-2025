@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create DOM</title>
+</head>
+<body>
+    <script>
+        const app = document.createElement('main');
+        app.setAttribute('id', 'app');
+
+        const pageTitle = document.createElement('h1');
+        pageTitle.innerText = 'Hello World!';
+
+        const description = document.createElement('p');
+        description.appendChild(
+            document.createTextNode('a little description here')
+        );
+
+        const header = document.createElement('header');
+        header.classList.add('page-head');
+
+        header.appendChild(pageTitle);
+        header.appendChild(description);
+        app.appendChild(header);
+
+        document.body.appendChild(app);
+    </script>
+</body>
+</html>

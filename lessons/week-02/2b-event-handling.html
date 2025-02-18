@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <form name="test-form" method="post">
+            <input name="content" />
+            <button class="button">Click here</button>
+        </form>
+        
+        <ul class="list"></ul>
+        <p>0</p>
+    </div>
+    <script>
+        const list = document.querySelector('#app .list');
+
+        const addElement = (content) => {
+            const element = document.createElement('li');
+            element.innerText = content;
+            list.appendChild(element);
+            document.querySelector('#app p').innerText =
+                list.children.length;
+        };
+
+        const form = document.querySelector(`#app form[name='test-form']`);
+        const button = document.querySelector('.button');
+        const input = document.querySelector("input[name='content']");
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const value = input.value.trim();
+            !!value && addElement(value);
+        });
+
+        const disableButton = (value) => {
+            button.disabled = !value || !value.trim();
+        }
+
+        input.addEventListener('change', (event) => {
+            disableButton(event.target.value);
+        });
+        disableButton(input.value);
+        
+    </script>
+</body>
+</html>
