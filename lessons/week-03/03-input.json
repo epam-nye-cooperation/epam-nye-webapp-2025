@@ -1,0 +1,133 @@
+[
+  {
+    "id": "0367baf3-1cb6-4baf-bede-48e17e1cd005",
+    "name": "Griffendél",
+    "houseColours": "Skarlátvörös és arany",
+    "founder": "Griffendél Godrik",
+    "animal": "Oroszlán",
+    "element": "Tűz",
+    "ghost": "Félig Fej Nélküli Nick",
+    "commonRoom": "Gryffindél Torony",
+    "description": "Ha vakmerő vagy s hősi lelkű, / Házad Griffendél. / Oda csak az kerül, ki / Semmitől se fél.",
+    "points": 100,
+    "heads": [
+      {
+        "id": "530da97d-5a83-4ea6-bc15-790edf5b5efc",
+        "firstName": "Minerva",
+        "lastName": "McGalagony"
+      },
+      {
+        "id": "9915c5f8-9177-4f63-bba8-d04387a404f9",
+        "firstName": "Godrik",
+        "lastName": "Griffendél"
+      }
+    ],
+    "traits": [
+      "Bátorság",
+      "Lovagiasság",
+      "Merészség",
+      "Elszántság"
+    ]
+  },
+  {
+    "id": "805fd37a-65ae-4fe5-b336-d767b8b7c73a",
+    "name": "Hollóhát",
+    "houseColours": "Kék és bronz",
+    "founder": "Hollóháti Hedvig",
+    "animal": "Sas",
+    "element": "Levegő",
+    "ghost": "Szürke Hölgy",
+    "commonRoom": "Hollóhát Tornya",
+    "description": "A Hugrabugnak nyájas népe / Békés, igazságos. / Oda mész, ha türelmes vagy / S jámbor - ez világos.",
+    "points": 80,
+    "heads": [
+      {
+        "id": "102ac5fc-db71-4055-8250-bc238cffb3d9",
+        "firstName": "Filius",
+        "lastName": "Flitwick"
+      },
+      {
+        "id": "57c04cf4-f3dd-46d6-a78f-84c30fb42533",
+        "firstName": "Hedvig",
+        "lastName": "Hollóhát"
+      }
+    ],
+    "traits": [
+      "Tanulás",
+      "Elfogadás",
+      "Intelligencia",
+      "Bölcsesség",
+      "Ész",
+      "Kreativitás"
+    ]
+  },
+  {
+    "id": "85af6295-fd01-4170-a10b-963dd51dce14",
+    "name": "Hugrabug",
+    "houseColours": "Sárga és fekete",
+    "founder": "Hugrabug Helga",
+    "animal": "Borz",
+    "element": "Föld",
+    "ghost": "Pufók Fráter",
+    "commonRoom": "Hugrabug Alagsor",
+    "description": "A bölcs öreg Hollóhátban / Éles elmék várnak. / Kiknek a tanulás kaland, / Oda azok járnak.",
+    "points": 85,
+    "heads": [
+      {
+        "id": "fab07935-774e-4eb4-8ed5-621bfe416d85",
+        "firstName": "Pomona",
+        "lastName": "Bimba"
+      },
+      {
+        "id": "a593e800-95dc-47ab-9243-6ac98d2f6ab4",
+        "firstName": "Helga",
+        "lastName": "Hugrabug"
+      }
+    ],
+    "traits": [
+      "Dolgosság",
+      "Türelmesség",
+      "Hűségesség",
+      "Akarat",
+      "Méltányosság",
+      "Szerénység"
+    ]
+  },
+  {
+    "id": "a9704c47-f92e-40a4-8771-ed1899c9b9c1",
+    "name": "Mardekár",
+    "houseColours": "Zöld és ezüst",
+    "founder": "Mardekár Malazár",
+    "animal": "Kígyó",
+    "element": "Víz",
+    "ghost": "Véres Báró",
+    "commonRoom": "Mardekár Pincéje",
+    "description": "Hogyha agyafúrt s ravasz vagy, / Ne tekints másra: / A Mardekár való neked. / Ott lelhetsz sok társra.",
+    "points": 120,
+    "heads": [
+      {
+        "id": "ef90f8c9-9f03-478e-baec-8a3c487e5271",
+        "firstName": "Perselus",
+        "lastName": "Piton"
+      },
+      {
+        "id": "36ba2ceb-6b6f-48a3-b512-9c1e66321eff",
+        "firstName": "Horatius",
+        "lastName": "Lumpsluck"
+      },
+      {
+        "id": "5cac8ad3-b5fc-4c48-a951-990cdd5671bc",
+        "firstName": "Malazár",
+        "lastName": "Mardekár"
+      }
+    ],
+    "traits": [
+      "Találékonyság",
+      "Önvédelem",
+      "Ambíció",
+      "Ravaszság",
+      "Büszkeség",
+      "Elszántság"
+    ]
+  }
+]
