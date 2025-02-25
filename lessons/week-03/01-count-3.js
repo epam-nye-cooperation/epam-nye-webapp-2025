@@ -13,10 +13,9 @@ const count = (arr) => {
   if (!arr?.length) {
     return [];
   }
-
   return [
     arr.filter(isPositive).length,
-    sum(arr.filter(isNegative))
+    sum(arr.filter(isNegative)),
   ];
 };
 
@@ -25,5 +24,4 @@ const isNegative = (item) => item < 0;
 const sum = (arr) => arr.reduce((total, item) => total + item, 0);
 
 console.log(count(input));
-console.log(count(input2));
 console.log(count(null));

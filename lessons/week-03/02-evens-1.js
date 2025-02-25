@@ -10,9 +10,14 @@ const inputs = [
 ];
 
 const evenLimiter = (input, size) => {
-  return input
-    .filter((item) => item % 2 === 0)
-    .splice(-size)
+  const result = [];
+  let i = input.length - 1;
+  do {
+    if (input[i] % 2 === 0) {
+      result.unshift(input[i]); //beilleszt egy elemet a tömb elejére
+    }
+  } while (result.length < size && i-- > 0);
+  return result;
 };
 
 inputs.forEach(({ array, size }) => {

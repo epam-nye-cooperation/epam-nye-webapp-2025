@@ -12,7 +12,7 @@ const inputs = [
 const evenLimiter = (input, size) => {
   return input
     .filter((item) => item % 2 === 0)
-    .splice(-size)
+    .splice(-size);
 };
 
 inputs.forEach(({ array, size }) => {

@@ -9,21 +9,21 @@
 const input = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15]; // => [10, -65]
 const input2 = [0, 2, 3, 0, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14]; // [8, -50]
 
-const count = (arr) => {
-  if (!arr?.length) {
+const count2 = (arr) => {
+  if (arr === null || !arr.length) {
     return [];
   }
-
-  return [
-    arr.filter(isPositive).length,
-    sum(arr.filter(isNegative))
-  ];
+  let positiveCount = 0;
+  let negativeSum = 0;
+  arr.forEach((item) => {
+    if (item > 0) {
+      positiveCount++;
+    } else {
+      negativeSum += item;
+    }
+  });
+  return [positiveCount, negativeSum];
 };
 
-const isPositive = (item) => item > 0;
-const isNegative = (item) => item < 0;
-const sum = (arr) => arr.reduce((total, item) => total + item, 0);
-
 console.log(count(input));
-console.log(count(input2));
 console.log(count(null));
