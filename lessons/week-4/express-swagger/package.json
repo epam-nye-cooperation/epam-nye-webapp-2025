@@ -1,0 +1,22 @@
+{
+  "name": "express-demo",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "NYE Basic express demo",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --env-file .env app.js",
+    "swagger": "node --env-file .env swagger.js"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "swagger-autogen": "^2.23.7",
+    "swagger-ui-express": "^5.0.1"
+  }
+}

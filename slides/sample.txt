@@ -1,0 +1,5 @@
+This is a sample text file.
+It contains a few dummy sentences.
+Node.js is a powerful JavaScript runtime.
+Learning Node.js can be fun and rewarding.
+Happy coding!
